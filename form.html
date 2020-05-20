@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <title>Form_Ainul</title>
+</head>
+
+<style>
+
+input[type=search], select {
+  width: 60%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  background-color: #f8f8f8;
+  resize: grabber;
+}
+
+input[type=submit]  {
+  background-color: #60C7CD;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #40A7AD;
+}
+
+div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 0px;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  padding: 20px;  
+}
+
+</style>
+
+<body>
+
+<p><a href=form.html>Home</a></p>
+
+<hr>
+
+<form> 
+         <center>
+                     <label for="search"></label>
+                     <input type="search" id="search" name="search">
+                     <input type="submit" value="Search">
+         </center> 
+</form>
+
+<br>
+         <div>
+                     <form action="/action_page.php">
+                                   
+                                                       <label for="name">Your name*</label><br>
+                                                       <input type="text" id="name" name="name" required><br>
+                                                       <label for="email">Your e-mail address*</label><br>
+                                                       <input type="email" id="email" name="email" required><br>
+                                                       <lable for="text">Subject*</label><br>
+                                                       <input type="text" id="subject" name="subject" required><br>
+                                                       <lable for="text">Message*</label><br>
+                                                       <textarea id="message" name="message" required></textarea><br>
+                                                       <input type="submit" value="Send message">
+                                                       <input type="submit" formaction="/action_page2.php" value="Preview">    
+                                   
+                      </form>
+         </div>
+
+
+</body>
+</html>
